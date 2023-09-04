@@ -1,0 +1,243 @@
+/* General Styling 
+======================================= */
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    color-scheme: dark light;
+    font-family: system-ui;
+    line-height: 1.5;
+}
+
+.material-icons {
+    vertical-align: middle;
+    height: 26px;
+}
+
+.button {
+    text-decoration: none;
+    background:hsl(216, 100%, 71%);
+    padding: 1em;
+    border-radius: 20px;
+    color: black;
+    font-weight: bold;
+    white-space: nowrap;
+    user-select: none;
+    outline: none;
+    outline: 2px solid transparent;
+}
+
+.button:hover,
+.button:focus {
+    color: hsl(216, 100%, 71%);
+    background: white;
+    outline: 2px solid black;
+}
+
+/* Header
+======================================= */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-inline: 1em;
+    gap: 1em;
+}
+
+.header-text {
+    margin-block: 1.5em;
+    min-width: 150px;
+    font-weight: 600;
+}
+
+.header-text p {
+    color: hsl(216, 100%, 71%);
+    font-size: 1.1em;
+}
+
+.header-text p:nth-child(3) {
+    margin-block-start: 0.25em;
+}
+
+.header-resume a:hover,
+.header-resume:focus {
+    color: hsl(216, 100%, 71%);
+    background: white;
+}
+
+@media screen and (max-width: 850px) {
+    header {
+        flex-direction: column;
+        margin-block-end: 2em;
+    }
+}
+
+/* Body
+======================================= */
+
+/* About section */
+.about {
+    --background-angle: -3deg;
+    --background-gradient: linear-gradient(
+        to top right,
+        rgb(40, 252, 68),
+        rgb(229, 255, 0)
+    );
+    position: relative;
+    isolation: isolate;
+    padding-block: 3em;
+    background: hsl(216, 92%, 62%);
+    padding: 2em;
+    color: black;
+    min-width: 150px;
+    margin-block-start: 3em;
+}
+
+.about::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background-image: var(--background-gradient);
+    transform: skewY(var(--background-angle));
+}
+
+.about h2 {
+    text-align: center;
+    font-size: 2em;
+}
+
+.about p {
+    margin: 0 auto;
+    line-height: 1.5em;
+    margin-block: 1em;
+    font-size: 1.25em;
+}
+
+@media screen and (min-width: 850px) {
+    .about p {
+        max-width: 50%;
+    }
+}
+
+/* Projects section */
+.projects {
+    margin-block-start: 5em;
+}
+
+.projects section {
+    margin-inline: 1em;
+}
+
+.projects h2 {
+    text-align: center;
+    margin-block-end: 20px;
+    font-size: 2em;
+    background-image: linear-gradient(
+        to top right,
+        rgb(23, 198, 241),
+        rgb(17, 105, 221)
+    );
+}
+
+.project {
+    margin-block-end: 2em;
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+.project {
+    margin-block-end: 2em;
+}
+
+.project p {
+    margin-block-end: 1em;
+}
+
+.tags {
+    display: flex;
+    align-items: center;
+    margin-block-end: 1em;
+    flex-wrap: wrap;
+}
+
+.tags p {
+    white-space: nowrap;
+    margin: auto 0;
+}
+
+.tag {
+    background: rgb(125, 252, 40);
+    color: black;
+    padding: .1em .5em;
+    margin: .5em;
+    border-radius: 5px;
+}
+
+.project a {
+    padding: .25em .75em;
+}
+
+.project a:nth-of-type(2) {
+    margin-block-end: 2em;
+}
+
+@media screen and (max-width: 400px) {
+    .project a {
+        display: block;
+        width: fit-content;
+    }
+
+    .project a:nth-of-type(2) {
+        margin-block-start: .5em;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .project {
+        max-width: none;
+    }
+}
+
+/* Skills section
+======================================= */
+
+.skills {
+    margin-inline: 1em;
+    margin-block-end: 2em;
+}
+
+.skills h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-block-end: 1em;
+    background-image: linear-gradient(
+        to top right,
+        rgb(23, 198, 241),
+        rgb(17, 105, 221)
+    );
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 10em;
+}
+
+@media screen and (max-width: 650px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        gap: 2em;
+    }
+
+    .container p {
+        text-align: center;
+    }
+}
