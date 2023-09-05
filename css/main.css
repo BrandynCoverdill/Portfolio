@@ -19,6 +19,12 @@ html {
     height: 26px;
 }
 
+.socialMedia {
+    display: flex;
+    margin-block-start: .5em;
+    gap: .5em;
+}
+
 .button {
     text-decoration: none;
     background:hsl(216, 100%, 71%);
@@ -37,6 +43,21 @@ html {
     color: hsl(216, 100%, 71%);
     background: white;
     outline: 2px solid black;
+}
+
+.section {
+    margin-inline: 1em;
+}
+
+.heading-section {
+    text-align: center;
+    font-size: 2em;
+    margin-block-end: 1em;
+    background-image: linear-gradient(
+        to top right,
+        rgb(23, 198, 241),
+        rgb(17, 105, 221)
+    );
 }
 
 /* Header
@@ -76,6 +97,10 @@ header {
         flex-direction: column;
         margin-block-end: 2em;
     }
+
+    .socialMedia {
+        justify-content: center;
+    }
 }
 
 /* Body
@@ -86,15 +111,15 @@ header {
     --background-angle: -3deg;
     --background-gradient: linear-gradient(
         to top right,
-        rgb(40, 252, 68),
-        rgb(229, 255, 0)
+        rgb(43, 22, 228),
+        rgb(1, 132, 255)
     );
     position: relative;
     isolation: isolate;
     padding-block: 3em;
-    background: hsl(216, 92%, 62%);
+    background: hsl(209, 80%, 56%);
     padding: 2em;
-    color: black;
+    color: white;
     min-width: 150px;
     margin-block-start: 3em;
 }
@@ -129,21 +154,6 @@ header {
 /* Projects section */
 .projects {
     margin-block-start: 5em;
-}
-
-.projects section {
-    margin-inline: 1em;
-}
-
-.projects h2 {
-    text-align: center;
-    margin-block-end: 20px;
-    font-size: 2em;
-    background-image: linear-gradient(
-        to top right,
-        rgb(23, 198, 241),
-        rgb(17, 105, 221)
-    );
 }
 
 .project {
@@ -205,29 +215,21 @@ header {
     }
 }
 
-/* Skills section
-======================================= */
+/* Skills section */
 
 .skills {
-    margin-inline: 1em;
     margin-block-end: 2em;
-}
-
-.skills h2 {
-    text-align: center;
-    font-size: 2em;
-    margin-block-end: 1em;
-    background-image: linear-gradient(
-        to top right,
-        rgb(23, 198, 241),
-        rgb(17, 105, 221)
-    );
 }
 
 .container {
     display: flex;
     justify-content: center;
     gap: 10em;
+}
+
+.container h3 {
+    border-bottom: 1px solid white;
+    margin-block-end: .5em;
 }
 
 @media screen and (max-width: 650px) {
@@ -239,5 +241,45 @@ header {
 
     .container p {
         text-align: center;
+    }
+}
+
+/* Contact section */
+
+.contact {
+    margin-block-end: 2em;
+}
+
+.contact-form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1em;
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+button[type=submit] {
+    width: fit-content;
+    padding: .5em 1em;
+    white-space: nowrap;
+}
+
+#name,
+#email,
+#message {
+    background: transparent;
+    outline: none;
+}
+
+#name:focus,
+#email:focus,
+#message:focus {
+    background: hsl(0, 0%, 27%);
+}
+
+@media screen and (max-width: 850px) {
+    .contact-form {
+        max-width: none;
     }
 }
