@@ -57,7 +57,6 @@ html {
         rgb(23, 198, 241),
         rgb(17, 105, 221)
     );
-    /* border-bottom: 4px solid hsl(216, 100%, 71%);        */
     width: 50%;
     margin: 0 auto;
     margin-block-end: 2em;
@@ -259,19 +258,44 @@ header {
     margin-block-end: 2em;
 }
 
+.contact h2 {
+    margin-block-end: 1em;
+}
+
 .contact-form {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    gap: 1em;
     max-width: 50%;
     margin: 0 auto;
 }
 
+.contact-form input,
+.contact-form textarea {
+    margin-block: .4em;
+}
+
 button[type=submit] {
-    width: fit-content;
     padding: .5em 1em;
     white-space: nowrap;
+    width: 100%;
+    max-width: 40em;
+    margin: 1em auto;
+    background: hsl(216, 100%, 71%);
+    color: black;
+    font-weight: bold;
+    outline: 2px solid transparent;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+button[type=submit]:hover,
+button[type=submit]:focus {
+    color: hsl(216, 100%, 71%);
+    background: white;
+    outline: 2px solid black;
 }
 
 #name,
@@ -285,6 +309,11 @@ button[type=submit] {
 #email:focus,
 #message:focus {
     background: hsl(0, 0%, 27%);
+}
+
+.form-error {
+    color: red;
+    display: none;
 }
 
 @media screen and (max-width: 850px) {
