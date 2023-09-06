@@ -52,12 +52,21 @@ html {
 .heading-section {
     text-align: center;
     font-size: 2em;
-    margin-block-end: 1em;
     background-image: linear-gradient(
         to top right,
         rgb(23, 198, 241),
         rgb(17, 105, 221)
     );
+    /* border-bottom: 4px solid hsl(216, 100%, 71%);        */
+    width: 50%;
+    margin: 0 auto;
+    margin-block-end: 2em;
+}
+
+@media screen and (max-width: 800px) {
+    .heading-section {
+        width: 100%;
+    }
 }
 
 /* Header
