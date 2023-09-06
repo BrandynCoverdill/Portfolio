@@ -1,6 +1,6 @@
 Created by: Brandyn Coverdill
 Date: 9/4/2023
-Version: 1.0.1
+Version: 1.0.2
 ---------------------------------
 
 ##Credits
