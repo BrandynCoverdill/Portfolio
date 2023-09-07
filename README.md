@@ -1,16 +1,14 @@
-Created by: Brandyn Coverdill
+# Version: 1.0.3
 
-Creation Date: 9/4/2023
+Author: Brandyn Coverdill
 
-Last Updated: 9/7/2023
+> [!NOTE]
+> Everything may be subject to change without notice.
 
-Version: 1.0.3
----------------------------------
-
-### View the live site
+## View the live site
 [Live Site](https://brandyncoverdill.github.io/Portfolio/)
 
-### Credits
+## Credits
 
 - Social Media Icons credited to [Font Awesome](https://fontawesome.com).
 - Other Icons credited to [Material Icons](https://fonts.google.com/icons).
