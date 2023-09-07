@@ -7,6 +7,9 @@ Last Updated: 9/7/2023
 Version: 1.0.3
 ---------------------------------
 
+### View the live site
+[Live Site](https://brandyncoverdill.github.io/Portfolio/)
+
 ### Credits
 
 - Social Media Icons credited to [Font Awesome](https://fontawesome.com).
