@@ -21,19 +21,39 @@ submitBtn.addEventListener('click', (e) => {
     emailError.style.display = "none";
     message.style.border = "";
     messageError.style.display = "none";
+    // Used to focus on the first invalid input
+    let hasError = false;
     
     // Check if user input is invalidated
     if (!name.value ?? null) {
+        hasError = true;
         e.preventDefault();
+        name.focus();
         nameError.style.display = "block";
         name.style.border = "1px solid red";
     }
     if (!emailRegex.test(email.value)) {
+        switch (hasError) {
+            case false:
+                hasError = true;
+                email.focus();
+                break;
+            default:
+                break;
+        }
         e.preventDefault();
         emailError.style.display = "block";
         email.style.border = "1px solid red";
     }
     if (!message.value ?? null) {
+        switch (hasError) {
+            case false:
+                hasError = true;
+                message.focus();
+                break;
+            default:
+                break;
+        }
         e.preventDefault();
         messageError.style.display = "block";
         message.style.border = "1px solid red";
