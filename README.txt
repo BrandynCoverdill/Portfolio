@@ -3,7 +3,7 @@ Date: 9/6/2023
 Version: 1.0.2
 ---------------------------------
 
-##Credits
+## Credits
 
-- Social Media Icons credited to [Font Awesome](https://fontawesome.com)
-- Other Icons credited to [Material Icons](https://fonts.google.com/icons)
+- Social Media Icons credited to [Font Awesome](https://fontawesome.com).
+- Other Icons credited to [Material Icons](https://fonts.google.com/icons).
