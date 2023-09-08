@@ -2,8 +2,8 @@ const form = document.querySelector('form');
 const submitBtn = document.getElementById('submit');
 
 /**
- * Checks if the form is validated before sending.
- */
+* Checks if the form is validated before sending.
+**/
 submitBtn.addEventListener('click', (e) => {
     // Scoped variables
     const name = document.getElementById('name');
