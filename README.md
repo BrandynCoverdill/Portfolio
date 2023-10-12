@@ -1,4 +1,4 @@
-# Version: 1.0.4
+# Version: 1.1.0
 
 Author: Brandyn Coverdill
 
@@ -6,6 +6,7 @@ Author: Brandyn Coverdill
 > Everything may be subject to change without notice.
 
 ## View the live site
+
 [Live Site](https://brandyncoverdill.github.io/Portfolio/)
 
 ## Credits

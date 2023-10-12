@@ -1,105 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="shortcut icon" href="assets/images/BC_Logo.png" type="image/x-icon">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- CSS Files -->
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="stylesheet" href="css/main.css">
-    <!-- JS Files -->
-    <script src="js/main.js" defer></script>
-    <title>Brandyn Coverdill</title>
-</head>
-<body>
-    <header>
-        <div class="header-text">
-            <h1>Brandyn Coverdill</h1>
-            <p>Web Developer</p>
-            <p>I create accessible, maintainable, and unique websites.</p>
-            <div class="socialMedia">
-                <a href="https://github.com/BrandynCoverdill" target="_blank"><i class="fa-brands fa-github fa-xl"></i></a>
-                <a href="https://www.linkedin.com/in/brandyn-coverdill/" target="_blank"><i class="fa-brands fa-linkedin fa-xl"></i></a>
-            </div>
-        </div>
-        <div class="header-resume">
-            <a href="assets/pdfs/Resume.pdf" class="button">Download Resume<i class="material-icons">download</i></a>
-        </div>
-    </header>
-    <body>
-        <div class="about">
-            <section>
-                <h2>ABOUT MYSELF</h2>
-                <p>After graduating high school in 2017, I believed that life would find a spot for me with little work - as I was doing nothing to improve myself. I had no clue what I wanted to do in life. The only thing I did know was that I wanted to help change the world for the better.</p>
-                <p>After talking about this with my brother, he had mentioned programming. I did not know a single thing about programming at the time, but I wanted to give it a try. I created an account for Code Academy and fell in love with Python. I went to a nearby university for Software Development and that is where I had developed most of my skills for OOP - although the courses and projects were mainly backend development.</p>
-                <p>Since graduating with an Associates Degree in Software Development, I had moved states and it was pretty difficult to land a job with my skillset, along with the competition. I ended up feeling discouraged and eventually had a few jobs doing unrelated work for a couple of years.</p>
-                <p>After moving again, I had decided to try my hand at coding again. This time, I had to learn everything from the ground-up by myself, with a focus on the frontend. I made a promise to myself that I will not let this go to waste and to always continue learning.</p>
-                <p>Nowadays, I study as much as I can, building web applications while learning new skills to add to my new and existing projects. I will say that since relearning everything again, I have improved a lot and I feel like I am ready to tackle on real world projects.</p>
-            </section>
-        </div>
-        <div class="projects">
-            <section class="section">
-                <h2 class="heading-section">PROJECTS</h2>
-                <div class="project-list">
-                    <div class="project">
-                        <h3>Portfolio</h3>
-                        <p>This project is the one you are currently viewing. It showcases who I am, my skills as a developer, and a way to contact me through email securely and social media. This is my first real project utilizing version control with Git. This is an ongoing project as I will be updating it often when I have more things to add.</p>
-                        <div class="tags">
-                            <p>Built with:</p>
-                            <span class="tag">HTML</span>
-                            <span class="tag">CSS</span>
-                            <span class="tag">JavaScript</span>
-                            <span class="tag">Formspree</span>
-                        </div>
-                        <a href="https://brandyncoverdill.github.io/Portfolio/" class="button" target="_blank">Live Demo<i class="material-icons">open_in_new</i></a>
-                        <a href="https://github.com/BrandynCoverdill/Portfolio" class="button" target="_blank">GitHub<i class="material-icons">open_in_new</i></a>
-                    </div>
-                </div>
-            </section>
-        </div>
-        <div class="skills">
-            <section class="section">
-                <h2 class="heading-section">SKILLS & TOOLS</h2>
-                <div class="container">
-                    <div class="languages">
-                        <h3>Languages</h3>
-                        <p>HTML</p>
-                        <p>CSS</p>
-                        <p>JavaScript</p>
-                        <p>C#</p>
-                        <p>Java</p>
-                    </div>
-                    <div class="technologies">
-                        <h3>Technologies</h3>
-                        <p>AJAX</p>
-                        <p>JSON</p>
-                        <p>Tailwind CSS</p>
-                    </div>
-                    <div class="tools">
-                        <h3>Tools</h3>
-                        <p>VSCode</p>
-                        <p>GIT</p>
-                        <p>GitHub</p>
-                    </div>
-                </div>
-            </section>
-        </div>
-        <div class="contact">
-            <section class="section">
-                <h2 class="heading-section">CONTACT</h2>
-                <form class="contact-form" action="https://formspree.io/f/xpzgrynk" method="POST">
-                    <input type="text" name="name" id="name" placeholder="NAME">
-                    <p class="form-error">*Please enter your name</p>
-                    <input type="email" name="email" id="email" placeholder="EMAIL">
-                    <p class="form-error">*Please enter a valid email address</p>
-                    <textarea name="message" id="message" cols="30" rows="10" placeholder="MESSAGE"></textarea>
-                    <p class="form-error">*Please enter a message</p>
-                    <button type="submit" id="submit">Send Email</button>
-                </form>
-            </section>
-        </div>
-    </body>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<link
+			rel="shortcut icon"
+			href="assets/images/BC_Logo.png"
+			type="image/x-icon"
+		/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- CSS Files -->
+		<link rel="stylesheet" href="css/normalize.css" />
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/icon?family=Material+Icons"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+		/>
+		<link rel="stylesheet" href="css/main.css" />
+		<!-- JS Files -->
+		<script src="js/main.js" defer></script>
+		<title>Brandyn Coverdill</title>
+	</head>
+	<body>
+		<header>
+			<div class="header-text">
+				<h1>Brandyn Coverdill</h1>
+				<p>Web Developer</p>
+				<p>I create accessible, maintainable, and unique websites.</p>
+				<div class="socialMedia">
+					<a href="https://github.com/BrandynCoverdill" target="_blank"
+						><i class="fa-brands fa-github fa-xl"></i
+					></a>
+					<a
+						href="https://www.linkedin.com/in/brandyn-coverdill/"
+						target="_blank"
+						><i class="fa-brands fa-linkedin fa-xl"></i
+					></a>
+				</div>
+			</div>
+			<div class="header-resume">
+				<a href="assets/pdfs/Resume.pdf" class="button"
+					><i class="material-icons">download</i>Download Resume</a
+				>
+			</div>
+		</header>
+		<body>
+			<div class="about">
+				<section>
+					<h2>ABOUT MYSELF</h2>
+					<p>
+						After graduating high school in 2017, I believed that life would
+						find a spot for me with little work - as I was doing nothing to
+						improve myself. I had no clue what I wanted to do in life. The only
+						thing I did know was that I wanted to help change the world for the
+						better.
+					</p>
+					<p>
+						After talking about this with my brother, he had mentioned
+						programming. I did not know a single thing about programming at the
+						time, but I wanted to give it a try. I created an account for Code
+						Academy and fell in love with Python. I went to a nearby university
+						for Software Development and that is where I had developed most of
+						my skills for OOP - although the courses and projects were mainly
+						backend development.
+					</p>
+					<p>
+						Since graduating with an Associates Degree in Software Development,
+						I had moved states and it was pretty difficult to land a job with my
+						skillset, along with the competition. I ended up feeling discouraged
+						and eventually had a few jobs doing unrelated work for a couple of
+						years.
+					</p>
+					<p>
+						After moving again, I had decided to try my hand at coding again.
+						This time, I had to learn everything from the ground-up by myself,
+						with a focus on the frontend. I made a promise to myself that I will
+						not let this go to waste and to always continue learning.
+					</p>
+					<p>
+						Nowadays, I study as much as I can, building web applications while
+						learning new skills to add to my new and existing projects. I will
+						say that since relearning everything again, I have improved a lot
+						and I feel like I am ready to tackle on real world projects.
+					</p>
+				</section>
+			</div>
+			<div class="projects">
+				<section class="section">
+					<h2 class="heading-section">PROJECTS</h2>
+					<div class="project-list">
+						<div class="project">
+							<h3>Feedback App</h3>
+							<p>
+								This is my first project that is created with the React
+								Framework. I coded along with Travery Media from his course and
+								had added more utilities to this application after the project
+								was completed. The data in this project is local as a JS file.
+								One utility I added to this project is the ability to sort the
+								feedback reviews by using props and state.
+							</p>
+							<div class="tags">
+								<p>Built with:</p>
+								<span class="tag">React</span>
+								<span class="tag">JavaScript</span>
+								<span class="tag">CSS</span>
+								<span class="tag">Framer Motion</span>
+							</div>
+							<a
+								href="https://brandyncoverdill.github.io/Feedback-app/"
+								class="button"
+								target="_blank"
+								><i class="material-icons">open_in_new</i>Live Demo</a
+							>
+							<a
+								href="https://github.com/BrandynCoverdill/Feedback-app"
+								class="button"
+								target="_blank"
+								><i class="material-icons">open_in_new</i>GitHub</a
+							>
+						</div>
+						<div class="project">
+							<h3>Portfolio</h3>
+							<p>
+								This project is the one you are currently viewing. It showcases
+								who I am, my skills as a developer, and a way to contact me
+								through email securely and social media. This is my first real
+								project utilizing version control with Git. This is an ongoing
+								project as I will be updating it often when I have more things
+								to add.
+							</p>
+							<div class="tags">
+								<p>Built with:</p>
+								<span class="tag">HTML</span>
+								<span class="tag">CSS</span>
+								<span class="tag">JavaScript</span>
+								<span class="tag">Formspree</span>
+							</div>
+							<a
+								href="https://brandyncoverdill.github.io/Portfolio/"
+								class="button"
+								target="_blank"
+								><i class="material-icons">open_in_new</i>Live Demo</a
+							>
+							<a
+								href="https://github.com/BrandynCoverdill/Portfolio"
+								class="button"
+								target="_blank"
+								><i class="material-icons">open_in_new</i>GitHub</a
+							>
+						</div>
+					</div>
+				</section>
+			</div>
+			<div class="skills">
+				<section class="section">
+					<h2 class="heading-section">SKILLS & TOOLS</h2>
+					<div class="container">
+						<div class="languages">
+							<h3>Languages</h3>
+							<p>HTML</p>
+							<p>CSS</p>
+							<p>JavaScript</p>
+							<p>C#</p>
+							<p>Java</p>
+						</div>
+						<div class="technologies">
+							<h3>Technologies</h3>
+							<p>AJAX</p>
+							<p>JSON</p>
+							<p>Tailwind CSS</p>
+						</div>
+						<div class="tools">
+							<h3>Tools</h3>
+							<p>VSCode</p>
+							<p>GIT</p>
+							<p>GitHub</p>
+						</div>
+					</div>
+				</section>
+			</div>
+			<div class="contact">
+				<section class="section">
+					<h2 class="heading-section">CONTACT ME</h2>
+					<form
+						class="contact-form"
+						action="https://formspree.io/f/xpzgrynk"
+						method="POST"
+					>
+						<input type="text" name="name" id="name" placeholder="NAME" />
+						<p class="form-error">*Please enter your name</p>
+						<input type="email" name="email" id="email" placeholder="EMAIL" />
+						<p class="form-error">*Please enter a valid email address</p>
+						<textarea
+							name="message"
+							id="message"
+							cols="30"
+							rows="10"
+							placeholder="MESSAGE"
+						></textarea>
+						<p class="form-error">*Please enter a message</p>
+						<button type="submit" id="submit">Send Email</button>
+					</form>
+				</section>
+			</div>
+		</body>
+	</body>
 </html>
